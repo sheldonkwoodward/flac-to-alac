@@ -17,7 +17,7 @@ do
     # audio conversion
     ffmpeg -i "$f" -vn -c:a alac -y "$ALAC_DIR/${f%.flac}.m4a" "$ALAC_DIR/folder.png"
     # embed the artwork
-    # atomicparsley "$ALAC_DIR/${f%.flac}.m4a" --artwork "$ALAC_DIR/cover.png" --overWrite
+    # AtomicParsley "$ALAC_DIR/${f%.flac}.m4a" --artwork "$ALAC_DIR/folder.png" --overWrite
 done
 # remove the extracted album artwork
-# rm "$ALAC_DIR/cover.png"
+# rm "$ALAC_DIR/folder.png"
